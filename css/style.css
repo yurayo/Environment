@@ -66,11 +66,12 @@ body{
 
 
 
-/*
-/*#menu{
+
+#menu {
     position: relative;
-    width:100%; height:1000px;
+    width: 1140px;
     background: white;
+    margin: 0 auto;
 }
 
 #menu>ul{
@@ -83,6 +84,9 @@ body{
 li.mm{
     width:180px;
 }
+.mainMenu01{
+        border-left: 1px solid #DFDFDF;
+}
 .mainMenu07{
     width:60px; height:100%;
 }
@@ -91,9 +95,10 @@ li.mm{
     text-align: center;
     font-size: 18px;
     border-right: 1px solid #DFDFDF;
-    padding:19px 0;
+    padding: 21px 0;
 }
-.subBg {
+
+/*.subBg {
     position: fixed;
     top: 166px;
     left: 0;
@@ -102,15 +107,24 @@ li.mm{
     background: white;
     z-index: -1000;
     border:1px solid #DFDFDF;
+}*/
+.smTotalWrap {
+    position: fixed;
+    width: 100%;
+    height: 300px;
+    background: gray;
+    left: 0;
 }
 .smwr {
-    position:absolute;
-    width: 100%;
-    height: 370px;
-    background: #FAFAFA;
-    display:flex;
-
+    /* position: relative; */
+    width: 1140px;
+    height: 300px;
+     background: #FAFAFA; 
+    display: flex;
+    /* justify-content: center; */
+    margin: 0 auto;
 }
+
 .smwr>div{
     flex-basis:230px;
 }
@@ -133,4 +147,5 @@ li.mm{
     font-size: 14px;
     line-height: 26px;
 }
+
 */
