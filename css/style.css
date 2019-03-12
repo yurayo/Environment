@@ -174,16 +174,23 @@ border-left:1px solid #b7b0b0;
     padding-top:30px;
     }
 
-.view{
-    width:830px; height:450px;
-    overflow:hidden;
+.view {
+    width: 830px;
+    height: 450px;
+    /* overflow: hidden; */
+    position: relative;
+}
+.view img {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .realtime_info {
     width: 520px;
     height: 240px;
     margin-right: 20px;
-    background-color: gray;
+    background-color: white;
     overflow: hidden;
 }
 
@@ -223,6 +230,7 @@ border-left:1px solid #b7b0b0;
 .iconTitle{
     width:300px;
     padding-left: 7px;
+    font-weight: 500;
 }
 
 /*공지공고*/
@@ -466,10 +474,14 @@ background:  gray;
     display: flex;
     height: 100%;
 }
-.footMenuInner>ul>li{
-    width:219px; height:51px;
+.footMenuInner>ul>li {
+    width: 219px;
+    height: 51px;
     background: #4C5A69;
-    border-right:1px solid white;
+    border-right: 1px solid #5b6978;
+    text-align: left;
+    padding-left: 21px;
+    position: relative;
 }
 .footMenuInner>ul>li:last-child {
     width: 259px;
@@ -489,8 +501,9 @@ background:  gray;
 }
 .boxUnit_1 {
     position: relative;
-    top: -216px;
-    width: 198px;
+    left: -22px;
+    top: -218px;
+    width: 219px;
     height: 180px;
     text-align: left;
     padding: 10px;
@@ -507,7 +520,8 @@ background:  gray;
 .boxUnit_2 {
     position: relative;
     top: -308px;
-    width: 492px;
+    left: -22px;
+    width: 510px;
     height: 270px;
     text-align: left;
     padding: 10px;
@@ -535,6 +549,7 @@ background:  gray;
 
 .boxUnit_3 {
     position: relative;
+    left: -23px;
     top: -308px;
     width: 492px;
     height: 270px;
@@ -559,7 +574,8 @@ background:  gray;
 .boxUnit_4 {
     position: relative;
     top: -368px;
-    width: 198px;
+    left: -22px;
+    width: 219px;
     height: 330px;
     text-align: left;
     padding: 10px;
@@ -607,6 +623,7 @@ background:  gray;
 .serviceContents>ul dt {
    padding-right: 23px;
     font-weight: 600;
+    background: url(../img/btn_more.png); /*center left no-repeat;*/
 }
 .serviceContents>ul dd{
     padding-right:10px;
@@ -614,3 +631,65 @@ background:  gray;
 
 
 /*footer 메뉴 끝*/
+
+.footerWrap{
+    width:100%; height: 160px;
+}
+.footerInnerWrap {
+    width: 1140px;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 12px;
+    color:white;
+}
+.footerLink {
+    width: 100%;
+    padding: 30px 0 18px 6px;
+}
+.footerLink>ul {
+    display: flex;
+    font-weight: bold;
+    opacity: 0.9;
+}
+.footerLink>ul>li{
+    padding:0 12px 0 12px;
+    border-right:1px solid white;
+}
+
+.footerLink>ul>li>a{
+    color:white;
+}
+#orange{
+    color:orange;
+}
+.footerAddress {
+    width: 100%;
+    height: 78px;
+    padding-left: 18px;
+    line-height: 17px;
+    font-size: 12px;
+    opacity:0.7;
+}
+.copyTxt {
+    font-size: 11px;
+    padding-top: 11px;
+    font-weight: 100;
+}
+.footerWrap, .footerInnerWrap {
+    background: #3E4B5A;
+}
+
+.foot_more_btn{
+    position:absolute;
+    right:19px;
+    top:20px;
+}
+.sp_link {
+    width: 14px;
+    height: 8px;
+    overflow: hidden;
+    position: ;
+    position: absolute;
+    top: 23px;
+    right: 23px;
+}
