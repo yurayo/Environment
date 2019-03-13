@@ -163,6 +163,7 @@ border-left:1px solid #b7b0b0;
 }
 
 .sectionInnerWrap {
+    position: relative;
     width: 1140px;
     display: flex;
     background-color: #f5f8fa;
@@ -170,7 +171,43 @@ border-left:1px solid #b7b0b0;
     margin: 0 auto;
 }
 
-.wrap01, .wrap03, .wrap04, .wrap05, .wrap06{
+.control {
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    bottom: 8px;
+}
+.control>button{
+    border:none;
+}
+.control>button>span{
+    visibility: hidden;
+}
+.control img {
+    position: relative;
+    bottom: -46px;
+    left: -2px;
+}
+
+#btnPrev, #btnStop, #btnPlay{
+   width:65px; height:65px;
+}
+
+#btnPrev{
+    background: url("../img/banner/left_btn.png") no-repeat;
+
+}
+
+#btnStop{
+    background: url("../img/banner/stop_btn.png") no-repeat;
+}
+
+#btnPlay{
+    background: url("../img/banner/right_btn.png") no-repeat;
+
+}
+
+.wrap01,.wrap02, .wrap03, .wrap04, .wrap05, .wrap06{
     padding-top:30px;
     }
 
@@ -199,6 +236,7 @@ border-left:1px solid #b7b0b0;
 
 
 
+
 /*보도해명*/
 .section01Box{
     width: 290px; height:240px;
@@ -207,13 +245,16 @@ border-left:1px solid #b7b0b0;
 }
 
 .section01Box>ul {
-    line-height: 35px;
-    font-size: 14px;
+    line-height: 31px;
+    font-size: 13px;
+    color: gray;
+    padding-left: 10px;
 }
-.titleWrap{
-    display:flex;
+.titleWrap {
+    display: flex;
+    position: relative;
+    margin-bottom: 6px;
 }
-
 .icon{
     position:relative;
     height:40px;
@@ -228,7 +269,7 @@ border-left:1px solid #b7b0b0;
 }
 
 .iconTitle{
-    width:300px;
+    width: 321px;
     padding-left: 7px;
     font-weight: 500;
 }
@@ -253,6 +294,7 @@ border-left:1px solid #b7b0b0;
 }
 
 .videoList{
+    position: relative;
     width:520px; height:240px;
     margin-right:20px;
     background: white;
@@ -265,7 +307,30 @@ border-left:1px solid #b7b0b0;
     width:240px;
 }
 
+.videoControl {
+    position: relative;
+    right: -17px;
+    top: 17px;
+    height: 25px;
+}
 
+.videoControl button{
+    width:25px; height:25px;
+    border:1px solid #AEB7BF;
+    background-size: 27px 27px;
+}
+.v_left_btn{
+    background: url("../img/videoControl/v_left_btn.png") no-repeat center; 
+}
+.v_stop_btn{
+    background: url("../img/videoControl/v_stop_btn.png") no-repeat center; 
+}
+.v_right_btn{
+    background: url("../img/videoControl/v_right_btn.png") no-repeat center; 
+}
+.v_plus_btn{
+    background: url("../img/videoControl/v_plus_btn.png") no-repeat center; 
+}
 
 
 /*카드뉴스*/
@@ -394,7 +459,9 @@ border-left:1px solid #b7b0b0;
 
 
 /*section 05 시작*/
-
+.wrap05_ban01{
+    position:relative;
+}
 .wrap05_ban01 ul {
     display: grid;
     grid-template-columns: 260px 260px;
@@ -413,13 +480,20 @@ background:  gray;
 
 .wrap05_ban01 img{
     padding-left:50px;
+        position: relative;
+    top: 4px;
+    left: -69px;
 }
 
 .wrap05_white{
     background-color: white;
 }
+
 .wrap05_blue{
     background-color: #DCE8F3;
+}
+.padding>img{
+    padding-left: 83px;
 }
 
 .wrap05_ban02 ul {
